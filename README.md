@@ -1,6 +1,6 @@
 # nuxt-apollo-crash
 Issue reproduction:  
-Nuxt server crashes on a TypeError from apollo (using @nuxtjs/apollo)  
+Using @nuxtjs/apollo, Nuxt server crashes when some apollo user custom function throw an error.  
 
 
 
