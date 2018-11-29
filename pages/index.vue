@@ -29,12 +29,12 @@ export default {
     continents: {
       query: continentsQuery,
       update: data => {
-        throw 'apollo custom code error'
+        throw 'apollo custom code error' // makes the server crash
       }
 
       /* manual: true,
       result() {
-        throw 'apollo custom code error' // makes the server crash
+        throw 'apollo custom code error' // also makes the server crash
       }, */
     }
   }
