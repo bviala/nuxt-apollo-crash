@@ -1,6 +1,12 @@
 # nuxt-apollo-crash
+Issue reproduction:  
+Nuxt server crashes on a TypeError from apollo (using @nuxtjs/apollo)  
 
-> My doozie Nuxt.js project
+
+
+Files of interest:
+* pages/index.vue
+* nuxt.config.js (apollo module declaration and configuration)s
 
 ## Build Setup
 
