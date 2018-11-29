@@ -28,9 +28,14 @@ export default {
   apollo: {
     continents: {
       query: continentsQuery,
-      // update: data => data.continents // correct line, works fine
-      // update: data => data.foo // incorrect key, nothing happens
-      update: data => data.foo.bar // incorrect key, throw a TypeError that makes the server crash
+      update: data => {
+        throw 'apollo custom code error'
+      }
+
+      /* manual: true,
+      result() {
+        throw 'apollo custom code error' // makes the server crash
+      }, */
     }
   }
 }
